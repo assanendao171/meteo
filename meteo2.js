@@ -38,7 +38,7 @@ async function avoirMeteo(ville) {
   emoji = "🌤️"
 }
       await new Promise((resolve) => setTimeout(resolve, 0));
-soleil.textContent=` ☀️ : région géographique ${input.value} , ${input.value.toUpperCase()}`
+soleil.textContent=` ☀️ : région géographique  ${input.value.toUpperCase()}`
 degre.textContent=` 🌡️ Température ${reponse.name} : ${reponse.main.temp}°C`
 neige.textContent=` ☁️ : Neige ${reponse.clouds.all}mm`
 bruine.textContent=` 🌦️ : Bruine  ${reponse.main.humidity}mm`
