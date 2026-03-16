@@ -15,45 +15,33 @@
     </div>
     <h2>Recherchez une ville pour voir la température et les conditions météo en temps réel. 🌤️</h2>
     <hr>
+    <div id="bloc">
+        <input type="text" id="input" placeholder="saisir la ville">
+        <button id="btn">rechercher</button>
+    </div>
     <div id="contain">
-        <div id="bloc">
-            <input type="text" id="input" placeholder="saisir la ville">
-            <button id="btn"><img src="recherche.jpg" alt="" id="recherche"></button>
-        </div>
         <div id="resultat">
-            <h3 id="icone"></h3>
-            <h3 id="h3">Entrer le nom de la Ville ou du Pays</h3>
+            <h3 id="h3">Entrer le nom de la Ville ou du Pays en haut</h3>
+        </div>
+        <hr id="hr">
+        <div id="stat">
+            <p id="soleil">☀️ Soleil</p>
+            <p id="degre">🌡️ Degré</p>
+            <p id="neige">☁️ neige</p>
+            <p id="bruine">🌦️ Bruine</p>
+            <p id="vent">💨 Vent</p>
+        </div>
+        <hr id="hr">
+        <div id="resultat">
+            <h3>Pour voir la météo compléte appuyer <a
+                    href="https://www.lachainemeteo.com/meteo-senegal/ville-462/previsions-meteo-dakar-aujourdhui"
+                    id="ici">ICI</a></h3>
         </div>
     </div>
-    <div id="contain2">
-        <div id="enfant">
-            <h4>sunny</h4><br>
-            <img src="sunny.jpg" alt="" id="photobas">
-        </div>
 
-
-
-        <div id="enfant">
-            <h4>partly </h4><br>
-            <img src="partlycloud.jpg" alt="" id="photobas">
-        </div>
-
-        <div id="enfant">
-            <h4>sleet rain</h4><br>
-            <img src="sleetrain.jpg" alt="" id="photobas">
-        </div>
-
-        <div id="enfant">
-            <h4>rain</h4><br>
-            <img src="rain.jpg" alt="" id="photobas">
-        </div>
-
-
-
-    </div>
     </div>
     <footer>
-        <p id="p">&copy;<a href="Ndaoassane2004@gmail.com">Ndaoassane2004@gmail.com</a></p>
+        <p id="p">&copy;<a href="mailto:Ndaoassane2004@gmail.com"> Ndaoassane2004@gmail.com</a></p>
     </footer>
     <script src="meteo2.js"></script>
 </body>

@@ -4,12 +4,11 @@ body {
   justify-content: center;
   justify-content: center;
   align-items: center;
-  background-image: url("fond.jpg");
+  background-image: url("background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(255, 39, 39);
-  text-shadow: rgb(255, 255, 255) 2px 2px 2px;
+  color: rgb(255, 255, 255);
   padding-top: 40px;
   margin: 0;
 }
@@ -21,7 +20,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  gap: 25px;
 }
 #photosoleil{
   width: 70px;
@@ -43,55 +41,97 @@ hr {
   width: 40%;
   margin-bottom: 20px;
 }
+#hr {
+  color: white;
+  border: 1px solid white;
+  margin-top: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+}
 #contain {
-  padding-top: 25px;
+  margin-top: 25px;
   text-align: center;
-  width: 42%;
-  background-color: aquamarine;
+  width: 35%;
+background-color: rgba(59, 47, 47, 0.479);
   border-radius: 15px;
-  height: 280px;
+  height: 360px;
 }
 input {
-  width: 50%;
+  width: 400px;
   height: 40px;
-  border-radius: 15px;
-  box-shadow: blue 1px 1px 6px 1px;
+  border-radius: 10px 0 0 10px;
+background-color: rgba(97, 81, 81, 0.479);
+  border: 1px solid black;
+
+color: white;
+font-size: 1rem;
+}
+::placeholder{
+  color: white; 
+  font-size: 1rem;
+  text-align: center;
 }
 button {
-  height: 45px;
+  height: 43px;
   width: 105px;
-  border-radius: 15px;
+  border-radius: 0 10px 10px 0;
   color: white;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid black;
+background-color: rgba(49, 36, 36, 0.692);
 }
-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 4, 255);
-  cursor: pointer;
-  border: 1px solid blue;
-  transform: scale(1.1);
-  transition: 0.5s;
-}
+
 #resultat {
   margin-top: 60px;
   background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 120px;
-  border-radius: 20px;
-  margin-left: 65px;
+width: 96%;
+margin: 10px;
+height: 43px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgba(49, 36, 36, 0.692);
 }
 h3 {
-  color: rgb(61, 52, 52);
+color: white;
   text-decoration: none;
+}
+#ici{
+  text-decoration: underline;
+  color: rgb(217, 255, 0);
 }
 #icone {
   color: rgb(70, 62, 62);
+}
+#stat{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+#soleil{
+  font-size: 1rem;
+   margin: 7px;
+}
+#degre{
+  font-size: 1rem;
+   margin: 7px;
+}
+#neige{
+  font-size: 1rem;
+   margin: 7px;
+}
+#bruine{
+  font-size: 1rem;
+   margin: 7px;
+}
+#vent{
+  font-size: 1rem;
+   margin: 7px;
 }
 #enfant{
   background-color: rgba(184, 180, 175, 0.733);
@@ -153,7 +193,7 @@ align-items: center;
 }
 hr {
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   margin-top: 10px;
   width: 60%;
   margin-bottom: 20px;
@@ -162,59 +202,60 @@ hr {
   padding-top: 25px;
   text-align: center;
   width: 80%;
-  background-color: aquamarine;
+background-color: rgba(59, 47, 47, 0.479);
   border-radius: 15px;
-  height: 280px;
+  height: 400px;
 }
 input {
-  width: 60%;
+  width: 250px;
   height: 30px;
-  border-radius: 15px;
-  box-shadow: blue 1px 1px 6px 1px;
-  margin-left:15px;
+  border-radius: 10px 0 0 10px;
+background-color: rgba(97, 81, 81, 0.479);
+  border: 1px solid black;
+
+color: white;
+font-size: 10px;
+}
+::placeholder{
+  color: white; 
+  font-size: 10px;
+  text-align: center;
 }
 button {
   height: 30px;
-  width: 95px;
-  border-radius: 15px;
+  width: 85px;
+  border-radius: 0 10px 10px 0;
   color: white;
   cursor: pointer;
-  border: 1px solid white;
-    margin-right: 15px;
+  border: 1px solid black;
+background-color: rgba(49, 36, 36, 0.692);
+}
 
-}
-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 4, 255);
-  cursor: pointer;
-  border: 1px solid blue;
-  transform: scale(1.1);
-  transition: 0.5s;
-}
 #resultat {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  height: 120px;
-  border-radius: 20px;
-  font-size: 15px;
+  margin-top: 10px;
+width: 92%;
+margin: 10px;
+height: 43px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: rgba(49, 36, 36, 0.692);
 }
 #recherche{
   width: 30px;
   height: 25px;
 }
 h3 {
-  color: rgb(61, 52, 52);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 10px;
   margin: 10px;
 }
 h1,h2{
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
   margin: 10px;
 }
@@ -283,41 +324,52 @@ h1,h2{
   margin: 10px;
 }
 input {
-  width: 60%;
+  width: 320px;
   height: 40px;
-  border-radius: 15px;
-  box-shadow: blue 1px 1px 6px 1px;
-  margin-left:15px;
+  border-radius: 10px 0 0 10px;
+background-color: rgba(97, 81, 81, 0.479);
+  border: 1px solid black;
+
+color: white;
+font-size: 12px;
+}
+::placeholder{
+  color: white; 
+  font-size: 16px;
+  text-align: center;
 }
 button {
   height: 40px;
-  width: 95px;
-  border-radius: 15px;
+  width: 102px;
+  border-radius: 0 10px 10px 0;
   color: white;
   cursor: pointer;
-  border: 1px solid white;
-    margin-right: 15px;
+  border: 1px solid black;
+background-color: rgba(49, 36, 36, 0.692);
+}
 
-}
-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 4, 255);
-  cursor: pointer;
-  border: 1px solid blue;
-  transform: scale(1.1);
-  transition: 0.5s;
-}
 #resultat {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 120px;
-  border-radius: 20px;
-  font-size: 15px;
+  margin-top: 10px;
+width: 92%;
+margin: 10px;
+height: 43px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: rgba(49, 36, 36, 0.692);
+}
+#recherche{
+  width: 30px;
+  height: 25px;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
 }
 footer{
   margin-top: 80px;
