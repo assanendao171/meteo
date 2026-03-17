@@ -70,3 +70,8 @@ neige.textContent=` ☁️ : Neige `
 bruine.textContent=` 🌦️ : Bruine  `
 vent.textContent=` 💨 : Vent `
 });
+window.addEventListener("keypress",function(e){
+  if(e.key==="Enter"){
+    btn.click()
+  }
+})
