@@ -1,0 +1,41 @@
+body{
+    background-image: url("fondacceuil.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    width: 240px;
+    height: 280px;
+    border-radius: 35px;
+}
+h1{
+    text-align: center;
+    color: rgb(62, 62, 230);
+    font-size:2rem;
+        margin-top: 70px;
+
+}
+#contain{
+    display: flex;
+    gap: 300px;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top:55px
+}
+p{
+        font-size: 20px;
+    text-align: center;
+    color: rgb(62, 62, 230);
+}
+#img1{
+    width: 280px;
+    height: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: 10px 10px 10px 2px rgb(54, 52, 41);
+}

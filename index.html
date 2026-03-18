@@ -1,49 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="meteo2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="haut">
-        <img src="icone.jpg" alt="icone" id="photosoleil">
-        <h1>Application Météo </h1>
-    </div>
-    <h2>Recherchez une ville pour voir la température et les conditions météo en temps réel. 🌤️</h2>
-    <hr>
-    <div id="bloc">
-        <input type="text" id="input" placeholder="saisir la ville">
-        <button id="btn">rechercher</button>
-    </div>
+    <h1>Bienvenu sur worldata weather</h1>
+    <p>Une solution moderne et légère permettant de visualiser en temps réel les conditions atmosphériques couplées à un atlas numérique 
+        complet. <br> L'application utilise des API de données géopolitique pour fournir des informations contéxtuelles <br>
+        ( population , capitale , degré , vent , neige , monnaie , langue , bruine ). <br>
+        Tout en offrant un suivi météoorologique précis . Conçu pour la rapidité et la  pertinence de l'information.
+    </p>
     <div id="contain">
-        <div id="resultat">
-            <h3 id="h3">Entrer le nom de la Ville ou du Pays en haut</h3>
+        <div id="img1">
+            <a href="meteo.html" target="_parent"> <img src="acceuil.jpg" alt="meteo"></a>
+<h3>appuyer sur l'image pour consulter la météo de votre pays</h3>
         </div>
-        <hr id="hr">
-        <div id="stat">
-            <p id="soleil">☀️ Soleil</p>
-            <p id="degre">🌡️ Degré</p>
-            <p id="neige">☁️ neige</p>
-            <p id="bruine">🌦️ Bruine</p>
-            <p id="vent">💨 Vent</p>
-        </div>
-        <hr id="hr">
-        <div id="resultat">
-            <h3>Pour voir la météo compléte appuyer <a
-                    href="https://www.lachainemeteo.com/meteo-senegal/ville-462/previsions-meteo-dakar-aujourdhui"
-                    id="ici">ICI</a></h3>
-        </div>
-    </div>
+        <div id="img2">
+            <a href="donne.html" target="_parent"><img src="18966224.jpg" alt="la terre"></a>
+<h3>appuyer sur l'image pour voir les statistiques de votre pays</h3>
 
+        </div>
     </div>
-    <footer>
+        <footer>
         <p id="p">&copy;<a href="mailto:Ndaoassane2004@gmail.com"> Ndaoassane2004@gmail.com</a></p>
     </footer>
-    <script src="meteo2.js"></script>
 </body>
-
 </html>

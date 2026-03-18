@@ -1,0 +1,14 @@
+img{
+    width: 260px;
+    height: 310px;
+    border-radius: 35px;
+}
+h1,p{
+    text-align: center;
+    color: rgb(62, 62, 230);
+}
+#contain{
+    display: flex;
+    gap: 300px;
+fle
+}

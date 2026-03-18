@@ -1,0 +1,22 @@
+body{
+    background-image: url("fondacceuil.png");
+    background-size: cover;
+    bac
+}
+img{
+    width: 240px;
+    height: 280px;
+    border-radius: 35px;
+}
+h1,p{
+    text-align: center;
+    color: rgb(62, 62, 230);
+}
+#contain{
+    display: flex;
+    gap: 300px;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top:55px
+}

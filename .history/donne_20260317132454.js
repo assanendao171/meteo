@@ -1,0 +1,60 @@
+let input = document.getElementById("input");
+let btn = document.getElementById("btn");
+let h3 = document.getElementById("h3");
+let icone = document.getElementById("icone");
+let carte = document.getElementById("carte");
+let heure = document.getElementById("heure");
+let monnaie = document.getElementById("monnaie");
+let langue = document.getElementById("langue");
+let population = document.getElementById("population");
+
+async function avoirdonne(pays) {
+  try {
+    let data = await fetch(`https://restcountries.com/v3.1/name/${pays}`);
+    if (!data.ok) {
+      throw new Error("ville introuvable !");
+    }
+    let reponse = await data.json();
+    h3.textContent =`🔍 Recherche en cours...${input.value.toUpperCase()}`
+          await new Promise((resolve) => setTimeout(resolve, 4000));
+    h3.textContent =`Ville trouvé ${input.value.toUpperCase()}`
+
+
+      await new Promise((resolve) => setTimeout(resolve, 0));
+carte.textContent=`🌍 : carte du pays${input.value.toUpperCase()}`
+heure.textContent=` 🕒 :heure locale  ${reponse.name} : ${reponse.main.temp}°C`
+monnaie.textContent=` 💰 monnaie ${reponse.clouds.all}mm`
+langue.textContent=` 🌦️ : Bruine  ${reponse.main.humidity}mm`
+population.textContent=` 💨 : Vent ${reponse.wind.speed} m/s`
+      input.value=""
+    
+    temps();
+  } catch (Error) {
+    async function wait(){
+    h3.textContent =`🔍 Recherche en cours...${input.value}`
+      await new Promise(resolve=>setTimeout(resolve,4000))
+h3.textContent = " ❌  Ville introuvable ❌";    input.value=""
+    }
+    wait()
+  }
+}
+btn.addEventListener("click", function () {
+  if(input.value===""){
+    alert("le champ est vide")
+    return
+  }
+  let ville = input.value.trim();
+  if (ville) {
+    avoirdonne(ville);
+  }
+  soleil.textContent=` ☀️ : région géographique `
+degre.textContent=` 🌡️ Température `
+neige.textContent=` ☁️ : Neige `
+bruine.textContent=` 🌦️ : Bruine  `
+vent.textContent=` 💨 : Vent `
+});
+window.addEventListener("keypress",function(e){
+  if(e.key==="Enter"){
+    btn.click()
+  }
+})

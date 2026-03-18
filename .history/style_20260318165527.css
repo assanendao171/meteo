@@ -1,0 +1,11 @@
+img{
+    width: 260px;
+    height: 310px;
+}
+h1,p{
+    text-align: center;
+    color: rgb(62, 62, 230);
+}
+#contain{
+    display: flex;
+}

@@ -1,0 +1,392 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  padding-top: 40px;
+  margin: 0;
+}
+#haut{
+  display: flex;
+  gap: 25px;
+}
+#bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#photosoleil{
+  width: 70px;
+    border-radius: 40%;
+
+}
+#photobas{
+  width: 70px;
+    border-radius: 40%;
+
+}
+#recherche{
+  width: 40px;
+}
+hr {
+  color: white;
+  border: 2px solid white;
+  margin-top: 10px;
+  width: 40%;
+  margin-bottom: 20px;
+}
+#hr {
+  color: white;
+  border: 1px solid white;
+  margin-top: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+#contain {
+  margin-top: 25px;
+  text-align: center;
+  width: 35%;
+background-color: rgba(59, 47, 47, 0.479);
+  border-radius: 15px;
+  height: 360px;
+}
+input {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+background-color: rgba(97, 81, 81, 0.479);
+  border: 1px solid black;
+
+color: white;
+font-size: 1rem;
+}
+::placeholder{
+  color: white; 
+  font-size: 1rem;
+  text-align: center;
+}
+button {
+  height: 43px;
+  width: 105px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+background-color: rgba(49, 36, 36, 0.692);
+}
+
+#resultat {
+  margin-top: 60px;
+  background-color: aliceblue;
+width: 96%;
+margin: 10px;
+height: 43px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgba(49, 36, 36, 0.692);
+}
+h3 {
+color: white;
+  text-decoration: none;
+}
+#ici{
+  text-decoration: underline;
+  color: rgb(217, 255, 0);
+}
+#icone {
+  color: rgb(70, 62, 62);
+}
+#stat{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+#soleil{
+  font-size: 1rem;
+   margin: 7px;
+}
+#degre{
+  font-size: 1rem;
+   margin: 7px;
+}
+#neige{
+  font-size: 1rem;
+   margin: 7px;
+}
+#bruine{
+  font-size: 1rem;
+   margin: 7px;
+}
+#vent{
+  font-size: 1rem;
+   margin: 7px;
+}
+#enfant{
+  background-color: rgba(184, 180, 175, 0.733);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;}
+#contain2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 60px;
+  padding-top: 30px;
+  color: rgb(255, 39, 39);
+}
+h4{
+  margin: 0;
+  color: black;
+}
+footer{
+  margin-top: 35px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(230, 53, 191);
+  color: black;
+  text-shadow: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#p a{
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+/* les media query mobile */
+
+@media(max-width:768px){
+*{
+box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+#haut{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#photosoleil{
+    width: 70px;
+    border-radius: 40%;
+}
+hr {
+  color: white;
+  border: 1px solid white;
+  margin-top: 10px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+#contain {
+  padding-top: 25px;
+  text-align: center;
+  width: 80%;
+background-color: rgba(59, 47, 47, 0.479);
+  border-radius: 15px;
+  height: 400px;
+}
+input {
+  width: 250px;
+  height: 30px;
+  border-radius: 10px 0 0 10px;
+background-color: rgba(97, 81, 81, 0.479);
+  border: 1px solid black;
+
+color: white;
+font-size: 10px;
+}
+::placeholder{
+  color: white; 
+  font-size: 14px;
+  text-align: center;
+}
+
+button {
+  height: 30px;
+  width: 85px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+background-color: rgba(49, 36, 36, 0.692);
+}
+
+#resultat {
+  margin-top: 10px;
+width: 92%;
+margin: 10px;
+height: 43px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: rgba(49, 36, 36, 0.692);
+}
+#recherche{
+  width: 30px;
+  height: 25px;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 10px;
+  margin: 10px;
+}
+h1,h2{
+  font-size: 13px;
+  text-align: center;
+  margin: 10px;
+}
+#enfant{
+  background-color: rgba(184, 180, 175, 0.733);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+border-radius: 15%;
+}
+#contain2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: rgb(255, 39, 39);
+  margin-top: 35px;
+}
+#photobas{
+    width: 35px;
+    border-radius: 30%;
+}
+h4{
+  margin: 0;
+  color: black;
+}
+footer{
+  margin-top: 80px;
+  width: 100%;
+  height: 130px;
+  background-color: rgb(230, 53, 191);
+  color: black;
+  text-shadow: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#p a{
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+*{
+box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+#photosoleil{
+    width: 100px;
+    border-radius: 40%;
+}
+h1,h2{
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+input {
+  width: 320px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+background-color: rgba(97, 81, 81, 0.479);
+  border: 1px solid black;
+
+color: white;
+font-size: 12px;
+}
+::placeholder{
+  color: white; 
+  font-size: 16px;
+  text-align: center;
+}
+button {
+  height: 40px;
+  width: 102px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+background-color: rgba(49, 36, 36, 0.692);
+}
+
+#resultat {
+  margin-top: 10px;
+width: 92%;
+margin: 10px;
+height: 43px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: rgba(49, 36, 36, 0.692);
+}
+#recherche{
+  width: 30px;
+  height: 25px;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+}
+footer{
+  margin-top: 80px;
+  width: 100%;
+  height: 160px;
+  background-color: rgb(230, 53, 191);
+  color: black;
+  text-shadow: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#p a{
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+}
